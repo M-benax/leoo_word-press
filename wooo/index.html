@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Squash Theme Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Enhanced Urgency Bar with Countdown -->
+<div style="background: linear-gradient(135deg, #ff0000, #cc0000); color:#fff; text-align:center; padding:20px; font-size:16px; position: relative; overflow: hidden; box-shadow: 0 4px 15px rgba(255,0,0,0.3);">
+    <!-- Animated background -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><circle cx="25" cy="25" r="1" fill="%23ffffff" opacity="0.1"/></svg>') repeat; animation: float 10s infinite linear;"></div>
+    
+    <div style="position: relative; z-index: 1;">
+        <div style="font-size: 1.2rem; margin-bottom: 15px; font-weight: bold; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+            🔥 <span style="color: #ffff00; text-shadow: 0 0 10px #ffff00;">FLASH SALE</span> - 50% OFF Ends In:
+        </div>
+        
+        <div class="countdown" style="display: flex; gap: 15px; justify-content: center; margin: 0;">
+            <div class="countdown-item" style="background: linear-gradient(145deg, #ff7b00, #ff5500); color: white; padding: 20px 15px; border-radius: 15px; text-align: center; min-width: 80px; box-shadow: 0 8px 20px rgba(255, 123, 0, 0.4); border: 2px solid rgba(255,255,255,0.2); position: relative; overflow: hidden;">
+                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent); animation: shine 2s infinite;"></div>
+                <span class="countdown-number" id="hours" style="font-size: 2.5rem; font-weight: 900; display: block; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">23</span>
+                <span class="countdown-label" style="font-size: 0.9rem; opacity: 0.9; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Hours</span>
+            </div>
+            
+            <div class="countdown-item" style="background: linear-gradient(145deg, #ff7b00, #ff5500); color: white; padding: 20px 15px; border-radius: 15px; text-align: center; min-width: 80px; box-shadow: 0 8px 20px rgba(255, 123, 0, 0.4); border: 2px solid rgba(255,255,255,0.2); position: relative; overflow: hidden;">
+                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent); animation: shine 2s infinite 0.3s;"></div>
+                <span class="countdown-number" id="minutes" style="font-size: 2.5rem; font-weight: 900; display: block; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">45</span>
+                <span class="countdown-label" style="font-size: 0.9rem; opacity: 0.9; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Minutes</span>
+            </div>
+            
+            <div class="countdown-item pulse-effect" style="background: linear-gradient(145deg, #ff7b00, #ff5500); color: white; padding: 20px 15px; border-radius: 15px; text-align: center; min-width: 80px; box-shadow: 0 8px 20px rgba(255, 123, 0, 0.4); border: 2px solid rgba(255,255,255,0.2); position: relative; overflow: hidden;">
+                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent); animation: shine 2s infinite 0.6s;"></div>
+                <span class="countdown-number" id="seconds" style="font-size: 2.5rem; font-weight: 900; display: block; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">30</span>
+                <span class="countdown-label" style="font-size: 0.9rem; opacity: 0.9; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Seconds</span>
+            </div>
+        </div>
+        
+        <div style="margin-top: 15px; font-size: 0.9rem; opacity: 0.9; font-weight: 500;">
+            ⚡ <span style="color: #ffff00;">Limited Time Only</span> - Don't Miss Out!
+        </div>
+    </div>
+</div>
+
+<header class="squash-header">
+    <a href="#" class="squash-logo">Squash Theme</a>
+    <a href="#shop" style="text-decoration:none; color:#333; font-weight:bold;">🛒 Cart</a>
+</header>
+
+<!-- SECTION 1: THE HERO -->
+<section class="hero">
+    <div class="container animate-in">
+        <h1>The One Product That Changes Everything.</h1>
+        <p style="font-size: 1.5rem; font-weight: 500; color: rgba(255,255,255,0.95);">Stop wasting time with complicated solutions. Squash the problem today with our premium solution.</p>
+        
+        <!-- Progress Bar -->
+        <div style="max-width: 400px; margin: 30px auto;">
+            <p style="font-size: 1.2rem; margin-bottom: 15px; font-weight: 600; color: rgba(255,255,255,0.95);">🔥 87% of customers see results in 24 hours</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+        
+        <!-- Main Hero Image -->
+        <div class="hero-image" style="margin: 40px auto; max-width: 500px; position: relative;">
+            <div style="width: 400px; height: 300px; margin: 0 auto; background: linear-gradient(45deg, #ff7b00, #ff9500); border-radius: 20px; position: relative; box-shadow: 0 20px 40px rgba(255, 123, 0, 0.3); transform: perspective(1000px) rotateY(-15deg) rotateX(10deg);">
+                <!-- Product mockup -->
+                <div style="position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px; background: white; border-radius: 15px; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: inset 0 2px 10px rgba(0,0,0,0.1);">
+                    <div style="font-size: 4rem; margin-bottom: 10px;">🚀</div>
+                    <div style="font-weight: bold; color: #333; font-size: 1.2rem;">SQUASH</div>
+                    <div style="color: #666; font-size: 0.9rem;">Premium Theme</div>
+                    <div style="margin-top: 15px; padding: 8px 20px; background: var(--squash-orange); color: white; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">LIVE DEMO</div>
+                </div>
+                <!-- Floating elements -->
+                <div style="position: absolute; top: -10px; right: -10px; width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; animation: pulse 2s infinite;"></div>
+                <div style="position: absolute; bottom: -15px; left: -15px; width: 40px; height: 40px; background: rgba(255,255,255,0.15); border-radius: 50%; animation: pulse 2s infinite 0.5s;"></div>
+            </div>
+        </div>
+        
+        <a href="#shop" class="btn-squash glow-effect">Get It Now - $49</a>
+        <p style="font-size: 1.1rem; margin-top: 20px; opacity: 1; font-weight: 600; color: rgba(255,255,255,0.95);">⚡ Instant Download • 💰 30-Day Guarantee • 🔒 Secure Checkout</p>
+    </div>
+</section>
+
+<!-- SECTION 2: THE BENEFITS (Grid) -->
+<section style="background: #f4f4f4; padding: 60px 0;">
+    <div class="container" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:30px;">
+        <div class="benefit-card" style="background:#fff; padding:30px; border-radius:15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+            <div style="font-size: 3rem; margin-bottom: 15px;">🚀</div>
+            <h3>Fast Results</h3>
+            <p>See changes in less than 24 hours. Guaranteed.</p>
+            <div style="margin-top: 15px; color: var(--squash-orange); font-weight: bold;">✓ Instant Setup</div>
+        </div>
+        <div class="benefit-card" style="background:#fff; padding:30px; border-radius:15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+            <div style="font-size: 3rem; margin-bottom: 15px;">🛡️</div>
+            <h3>Secure</h3>
+            <p>Encrypted checkout and 30-day money-back guarantee.</p>
+            <div style="margin-top: 15px; color: var(--squash-orange); font-weight: bold;">✓ SSL Protected</div>
+        </div>
+        <div class="benefit-card" style="background:#fff; padding:30px; border-radius:15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+            <div style="font-size: 3rem; margin-bottom: 15px;">⭐</div>
+            <h3>Top Rated</h3>
+            <p>Loved by over 10,000 happy customers worldwide.</p>
+            <div style="margin-top: 15px; color: var(--squash-orange); font-weight: bold;">✓ 4.9/5 Rating</div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section style="padding: 80px 0; background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%); color: white;">
+    <div class="container">
+        <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 50px;">What Our Customers Say</h2>
+        <div class="testimonials" style="max-width: 800px; margin: 0 auto;">
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p style="font-size: 1.2rem; font-style: italic; margin-bottom: 20px;">"This completely transformed my business. Results in just 2 days!"</p>
+                    <div style="font-weight: bold;">- Sarah Johnson</div>
+                    <div style="color: #666; font-size: 0.9rem;">CEO, TechStart</div>
+                </div>
+                <div class="testimonial">
+                    <p style="font-size: 1.2rem; font-style: italic; margin-bottom: 20px;">"Best investment I've made this year. Incredible ROI!"</p>
+                    <div style="font-weight: bold;">- Mike Chen</div>
+                    <div style="color: #666; font-size: 0.9rem;">Marketing Director</div>
+                </div>
+                <div class="testimonial">
+                    <p style="font-size: 1.2rem; font-style: italic; margin-bottom: 20px;">"Simple, effective, and worth every penny. Highly recommend!"</p>
+                    <div style="font-weight: bold;">- Emma Davis</div>
+                    <div style="color: #666; font-size: 0.9rem;">Freelancer</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 3: THE SHOP -->
+<section id="shop" class="container" style="padding: 80px 20px; text-align:center;">
+    <h2 style="font-size:2.5rem; margin-bottom:20px;">Select Your Package</h2>
+    <p style="font-size: 1.1rem; color: #666; margin-bottom: 50px;">🎯 Choose the perfect plan for your needs</p>
+    
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:30px; max-width:1000px; margin:0 auto;">
+        <div class="pricing-card" style="background:#fff; padding:40px; border-radius:20px; border:2px solid #eee; position: relative;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Basic</h3>
+            <div style="font-size:3rem; color:var(--squash-orange); font-weight:bold; margin: 20px 0;">$29</div>
+            <p style="color: #666; margin-bottom: 30px;">Perfect for getting started</p>
+            <ul style="text-align: left; margin-bottom: 30px; list-style: none; padding: 0;">
+                <li style="padding: 8px 0; border-bottom: 1px solid #eee;">✓ Core Features</li>
+                <li style="padding: 8px 0; border-bottom: 1px solid #eee;">✓ Email Support</li>
+                <li style="padding: 8px 0; border-bottom: 1px solid #eee;">✓ 30-Day Guarantee</li>
+            </ul>
+            <a href="#" class="btn-squash" style="margin-top:20px; width: 100%;">Get Started</a>
+        </div>
+        
+        <div class="pricing-card pulse-effect" style="background:#fff; padding:40px; border-radius:20px; border:3px solid var(--squash-orange); position: relative; transform: scale(1.05);">
+            <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--squash-orange); color: white; padding: 8px 20px; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">MOST POPULAR</div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Premium</h3>
+            <div style="font-size:3rem; color:var(--squash-orange); font-weight:bold; margin: 20px 0;">$49</div>
+            <p style="color: #666; margin-bottom: 30px;">Everything you need to succeed</p>
+            <ul style="text-align: left; margin-bottom: 30px; list-style: none; padding: 0;">
+                <li style="padding: 8px 0; border-bottom: 1px solid #eee;">✓ All Basic Features</li>
+                <li style="padding: 8px 0; border-bottom: 1px solid #eee;">✓ Priority Support</li>
+                <li style="padding: 8px 0; border-bottom: 1px solid #eee;">✓ Advanced Tools</li>
+                <li style="padding: 8px 0; border-bottom: 1px solid #eee;">✓ Bonus Materials</li>
+            </ul>
+            <a href="#" class="btn-squash glow-effect" style="margin-top:20px; width: 100%;">Get Premium</a>
+        </div>
+        
+        <div class="pricing-card" style="background:#fff; padding:40px; border-radius:20px; border:2px solid #eee; position: relative;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 10px;">Pro</h3>
+            <div style="font-size:3rem; color:var(--squash-orange); font-weight:bold; margin: 20px 0;">$99</div>
+            <p style="color: #666; margin-bottom: 30px;">For serious professionals</p>
+            <ul style="text-align: left; margin-bottom: 30px; list-style: none; padding: 0;">
+                <li style="padding: 8px 0; border-bottom: 1px solid #eee;">✓ Everything in Premium</li>
+                <li style="padding: 8px 0; border-bottom: 1px solid #eee;">✓ 1-on-1 Consultation</li>
+                <li style="padding: 8px 0; border-bottom: 1px solid #eee;">✓ Custom Solutions</li>
+                <li style="padding: 8px 0; border-bottom: 1px solid #eee;">✓ Lifetime Updates</li>
+            </ul>
+            <a href="#" class="btn-squash" style="margin-top:20px; width: 100%;">Go Pro</a>
+        </div>
+    </div>
+    
+    <!-- Trust Badges -->
+    <div style="margin-top: 60px; display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; opacity: 0.7;">
+        <div style="text-align: center;">
+            <div style="font-size: 2rem;">🔒</div>
+            <div style="font-size: 0.8rem;">SSL Secured</div>
+        </div>
+        <div style="text-align: center;">
+            <div style="font-size: 2rem;">💳</div>
+            <div style="font-size: 0.8rem;">Safe Payment</div>
+        </div>
+        <div style="text-align: center;">
+            <div style="font-size: 2rem;">⚡</div>
+            <div style="font-size: 0.8rem;">Instant Access</div>
+        </div>
+        <div style="text-align: center;">
+            <div style="font-size: 2rem;">🎯</div>
+            <div style="font-size: 0.8rem;">Money Back</div>
+        </div>
+    </div>
+</section>
+
+<footer style="background: var(--squash-dark); color: #888; padding: 40px 0; text-align: center; margin-top:50px;">
+    <div class="container">
+        <p>&copy; 2024 Squash Theme Demo. All rights reserved.</p>
+        <p style="font-size: 0.9rem;">Need help? Support@YourDomain.com</p>
+    </div>
+</footer>
+
+<script>
+// Countdown Timer
+function updateCountdown() {
+    const now = new Date().getTime();
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    tomorrow.setHours(0, 0, 0, 0);
+    const distance = tomorrow.getTime() - now;
+    
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+    document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+    document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+}
+
+// Update countdown every second
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+});
+
+// Add scroll animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+        }
+    });
+}, observerOptions);
+
+// Observe all benefit cards and pricing cards
+document.querySelectorAll('.benefit-card, .pricing-card').forEach(card => {
+    observer.observe(card);
+});
+</script>
+
+</body>
+</html>
